@@ -13,7 +13,7 @@ private:
 
 		if (var == 'n') {
 
-			std::cout << ("Ââåäiòü çíà÷åííÿ äëÿ n: ");
+			std::cout << ("Ã‚Ã¢Ã¥Ã¤iÃ²Ã¼ Ã§Ã­Ã Ã·Ã¥Ã­Ã­Ã¿ Ã¤Ã«Ã¿ n: ");
 			scanf_s("%lld", &buff);
 			while (getchar() != '\n') {
 				continue;
@@ -21,36 +21,36 @@ private:
 
 			try {
 
-				this->n = buff > 0 ? buff : throw std::exception("Çíà÷åííÿ n ìàº áóòè áiëüøå çà 0!");
+				this->n = buff > 0 ? buff : throw std::exception("Ã‡Ã­Ã Ã·Ã¥Ã­Ã­Ã¿ n Ã¬Ã Âº Ã¡Ã³Ã²Ã¨ Ã¡iÃ«Ã¼Ã¸Ã¥ Ã§Ã  0!");
 			}
 			catch (std::exception e) {
-				std::cout << e.what() << " Ñïðîáóéòå ùå!\n";
+				std::cout << e.what() << " Ã‘Ã¯Ã°Ã®Ã¡Ã³Ã©Ã²Ã¥ Ã¹Ã¥!\n";
 				AssignValue('n');
 			}
 		}
 		else {
-			std::cout << ("Ââåäiòü çíà÷åííÿ äëÿ m: ");
+			std::cout << ("Ã‚Ã¢Ã¥Ã¤iÃ²Ã¼ Ã§Ã­Ã Ã·Ã¥Ã­Ã­Ã¿ Ã¤Ã«Ã¿ m: ");
 			scanf_s("%lld", &buff);
 			while (getchar() != '\n') {
 				continue;
 			}
 			try {
-				this->m = buff > 0 && buff <= 2 * pow(10, 9) ? buff : throw std::exception("Çíà÷åííÿ n ìàº áóòè ìåíøå çà 2*10^9!");
+				this->m = buff > 0 && buff <= 2 * pow(10, 9) ? buff : throw std::exception("Ã‡Ã­Ã Ã·Ã¥Ã­Ã­Ã¿ n Ã¬Ã Âº Ã¡Ã³Ã²Ã¨ Ã¬Ã¥Ã­Ã¸Ã¥ Ã§Ã  2*10^9!");
 			}
 			catch (std::exception e) {
-				std::cout << e.what() << " Ñïðîáóéòå ùå!\n";
+				std::cout << e.what() << " Ã‘Ã¯Ã°Ã®Ã¡Ã³Ã©Ã²Ã¥ Ã¹Ã¥!\n";
 				AssignValue('m');
 			}
 		}
 	}
 
 	void CalculateResult(void) {
-		std::cout << "Àëiñà îòðèìàº " << (this->n - 1) * (this->m - 1) + 1 << " øìàòî÷êiâ ñèðó!\n";
+		std::cout << "Ã€Ã«iÃ±Ã  Ã®Ã²Ã°Ã¨Ã¬Ã Âº " << (this->n - 1) * (this->m - 1) + 1 << " Ã¸Ã¬Ã Ã²Ã®Ã·ÃªiÃ¢ Ã±Ã¨Ã°Ã³!\n";
 	}
 
 	bool AskToContinue() {
 
-		std::cout << "Áàæàºòå ïî÷àòè çíîâó? Ââåäiòü 'y' äëÿ ïðîäîâæåííÿ ðîáîòè! ";
+		std::cout << "ÃÃ Ã¦Ã ÂºÃ²Ã¥ Ã¯Ã®Ã·Ã Ã²Ã¨ Ã§Ã­Ã®Ã¢Ã³? Ã‚Ã¢Ã¥Ã¤iÃ²Ã¼ 'y' Ã¤Ã«Ã¿ Ã¯Ã°Ã®Ã¤Ã®Ã¢Ã¦Ã¥Ã­Ã­Ã¿ Ã°Ã®Ã¡Ã®Ã²Ã¨! ";
 		char Choice;
 
 		std::cin >> Choice;
